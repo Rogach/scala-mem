@@ -7,5 +7,7 @@ For more details, take a look at http://rogach-scala.blogspot.com/2012/03/memori
 
 Example:
 
-    val recursiveFibonacci = memr[Int,Int](fib => n => if (n < 2) 1 else fib(n - 1) + fib(n - 2))
-    recusiveFibonacci(5) // 8
+```scala
+val recursiveFibonacci = memr[Int,Int](fib => n => if (n < 2) 1 else fib(n - 1) + fib(n - 2))
+recusiveFibonacci(5) // 8
+```
